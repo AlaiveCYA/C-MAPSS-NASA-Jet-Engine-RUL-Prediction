@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-"""Las losowy (Random Forest) — osobny pipeline RUL, niezależny od LSTM."""
-
 import argparse
 import json
 import pickle

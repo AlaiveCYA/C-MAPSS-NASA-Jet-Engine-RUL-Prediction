@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-"""Train LSTM for CMAPSS RUL prediction."""
-
 import argparse
 import json
 import pickle
@@ -173,7 +170,7 @@ def main():
                 f"MSE val {val_mse:.2f} | dokł. kl. {val_acc * 100:.1f}%"
             )
 
-    out = Path("results") / dataset_id
+    out = Path("results") / dataset_id / "lstm"
     plots_dir = out / "wykresy"
     plots_dir.mkdir(parents=True, exist_ok=True)
 
